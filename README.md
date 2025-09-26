@@ -49,13 +49,52 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+```
+Developed by: Sandhiya M
+RegisterNumber: 212224220086
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Half Adder:
+module halfadd(a,b,s,c);
+input a,b;
+output s,c;
+xor G1(s,a,b);
+and G2(c,a,b);
+endmodule
 
-Developed by: RegisterNumber:*/
+Half Subractor:
+module halfsubtractor(x,y,d,b);
+input x,y;
+output d,b;
+wire w1;
+xor g1(d,x,y);
+not g2(w1,x);
+and g3(b,w1,y);
+endmodule
+
+```
 
 **RTL Schematic**
 
+Hald Adder:
+
+<img width="798" height="443" alt="half add img" src="https://github.com/user-attachments/assets/51f87156-5eab-4328-8908-6f04cf11388d" />
+
+Half Subractor:
+
+<img width="911" height="437" alt="halfsub" src="https://github.com/user-attachments/assets/9e9f346d-4bda-4943-8ab1-f7c38ff7fe8c" />
+
+
 **Output/TIMING Waveform**
 
+Half Adder:
+
+<img width="1910" height="522" alt="half add waveform" src="https://github.com/user-attachments/assets/cdb0288e-3919-4f75-8eb8-7d20288e220b" />
+
+Half Subractor:
+
+<img width="1906" height="598" alt="halfsub img" src="https://github.com/user-attachments/assets/1b2bae11-b521-4eb4-a7b5-65c42be881f5" />
+
+
 **Result:**
+
+Implementation-of-Half-Adder-and-Half Subtractor-circuit was successfully done.
